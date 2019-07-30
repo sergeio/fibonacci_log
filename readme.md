@@ -15,6 +15,7 @@ def fib(n):
         return 1
     return fib(n - 1) + fib(n - 2)
 ```
+`fib_triv.py`
 
 If you've never seen recursion before, this is kind of magical.  But once the
 novelty wears off, you notice that generating the 100th Fibonacci number is
@@ -34,13 +35,14 @@ def fib(n):
         low, high = high, low + high
     return high
 ```
+`fib_lin.py`
 
 If you've spent some time with programming interview questions, you might also
 know that there's a basically [constant-time solution](https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression),
 if you have a bunch of extra square-roots-of-five lying around.
 
 
-### The new
+### Logarithmic-time
 
 What I didn't know until recently is that there also exists a
 logarithmic-ish-time solution.
@@ -77,7 +79,7 @@ allows us to do this is that in order to compute e.g. 2^16, we don't need to
 multiply 2 by itself 16 times.  We can rely on the fact that 2^16 = 2^8 * 2^8.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
 
-Indeed this works.
+See `fib_log.py` if you're curious.
 
 
 ### Let's time some things
