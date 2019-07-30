@@ -4,7 +4,7 @@ Fibonacci
 _There's a logarithmic-time solution?!_
 
 
-## Background
+### Background
 
 If you just needed code that generates the nth Fibonacci number, a trivial
 implementation might look something like this:
@@ -40,8 +40,10 @@ know that there's a basically [constant-time solution](https://en.wikipedia.org/
 if you have a bunch of extra square-roots-of-five lying around.
 
 
-What blew my mind recently was that there also exists a logarithmic-ish-time
-solution.
+### The new
+
+What I didn't know until recently is that there also exists a
+logarithmic-ish-time solution.
 
 The first bit of knowledge we need is that it is possible to represent the
 operation of transforming a Fibonacci number into the next Fibonacci number
@@ -64,6 +66,7 @@ And it follows that if we want to advance in the sequence by two, we can just
 multiply by A twice:
 
 A * A * f = A * f' = f''
+
 A^2 * f = f''
 
 More generally, we can say that A^n * f will advance the sequence by n.
@@ -77,7 +80,7 @@ multiply 2 by itself 16 times.  We can rely on the fact that 2^16 = 2^8 * 2^8.
 Indeed this works.
 
 
-## Let's time some things
+### Let's time some things
 
 If we run the code in `timing.py`, we can see that indeed the logarithmic
 solution outperforms the linear on on a large-enough scale by quite a bit:
@@ -100,4 +103,4 @@ linear or logarithmic, the time those operations take is not.  You can clearly
 see that while the orange algorithm is labeled as "fib_lin", the runtime
 clearly curves upward.  And that's because the 10,000th Fibonacci number is
 well over 2,000 digits long.  Adding and multiplying such big numbers takes
-more than one CPU cycle, and depends on the magnitude of the number.
+more CPU cycles; timing depends on the magnitudes of the numbers.
