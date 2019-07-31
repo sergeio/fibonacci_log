@@ -58,8 +58,8 @@ Specifically, if we take the column vector
 then the resulting vector will be
 <img src="svgs/f83e21e74ccfd55219d4de7c7b17cb58.svg" align=middle width=89.86131pt height=47.67147pt/>.
 
-(<img src="svgs/ee1c9fcc1452eff199fcb4bda04bc783.svg" align=middle width=35.52351pt height=22.46574pt/> is the n-1th Fibonacci number, <img src="svgs/c9c53a99901c4a67544997f70b0f01bc.svg" align=middle width=18.69681pt height=22.46574pt/> is the nth and <img src="svgs/b5fc1b39bc634786995c3b0ab5dd3809.svg" align=middle width=35.340855pt height=22.46574pt/> is the
-n+1th)
+(<img src="svgs/ee1c9fcc1452eff199fcb4bda04bc783.svg" align=middle width=35.52351pt height=22.46574pt/> is the n-1st Fibonacci number, <img src="svgs/c9c53a99901c4a67544997f70b0f01bc.svg" align=middle width=18.69681pt height=22.46574pt/> is the nth and <img src="svgs/b5fc1b39bc634786995c3b0ab5dd3809.svg" align=middle width=35.340855pt height=22.46574pt/> is the
+n+1st)
 
 So we have <img src="svgs/f1e1a5b3bad54eb90cc6094d34559a97.svg" align=middle width=69.54321pt height=24.71634pt/>.
 

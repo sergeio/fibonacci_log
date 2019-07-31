@@ -71,8 +71,8 @@ $ f' = \begin{bmatrix}
    \end{bmatrix}
 $.
 
-($F_{n-1}$ is the n-1th Fibonacci number, $F_n$ is the nth and $F_{n+1}$ is the
-n+1th)
+($F_{n-1}$ is the n-1st Fibonacci number, $F_n$ is the nth and $F_{n+1}$ is the
+n+1st)
 
 So we have $ A \cdot f = f' $.
 
