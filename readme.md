@@ -84,7 +84,7 @@ Fibonacci numbers with matching time complexity.
 The bit of intuition that allows us to do this is that in order to compute e.g.
 <img src="svgs/d92a2953441d94f69056feca0851fe02.svg" align=middle width=21.324435pt height=26.76201pt/>, we don't need to multiply 2 by itself 16 times.  We can rely on the
 fact that <img src="svgs/3a2fd667b3576501cdef833219cfbf26.svg" align=middle width=106.392495pt height=26.76201pt/>.  Similarly, <img src="svgs/91dda47546340477a65500096e2c5564.svg" align=middle width=14.77179pt height=26.76201pt/> can be
-expressed as <img src="svgs/5b5a4b6381e075a4fede3fa7f32dba26.svg" align=middle width=42.237525pt height=26.76201pt/>.  And taking this logic to its conclusion,
+expressed as <img src="svgs/5b5a4b6381e075a4fede3fa7f32dba26.svg" align=middle width=42.237525pt height=26.76201pt/>.  Fully reduced, we can write
 <img src="svgs/2aef0a4ad0ce23d12ed6df228346661d.svg" align=middle width=146.712225pt height=26.76201pt/>.  Instead of 16 multiplications, we
 only need to do 5.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.

@@ -97,7 +97,7 @@ Fibonacci numbers with matching time complexity.
 The bit of intuition that allows us to do this is that in order to compute e.g.
 $ 2^{17} $, we don't need to multiply 2 by itself 16 times.  We can rely on the
 fact that $ 2^{17} = 2 \cdot 2^8 \cdot 2^8 $.  Similarly, $ 2^8 $ can be
-expressed as $ 2^4 \cdot 2^4$.  And taking this logic to its conclusion,
+expressed as $ 2^4 \cdot 2^4$.  Fully reduced, we can write
 $ 2^{17} = 2 \cdot ((2^2 \cdot 2^2)^2)^2 $.  Instead of 16 multiplications, we
 only need to do 5.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
