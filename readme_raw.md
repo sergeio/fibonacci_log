@@ -53,20 +53,21 @@ as a single matrix multiplication.
 
 Specifically, if we take the column vector
 $ f = \begin{bmatrix}
-    F_{n-1} F_n
+    F_{n-1} \\
+    F_n
    \end{bmatrix}
 $, and left-multiply it by
-
 $
 A = \begin{bmatrix}
-    0 & 1
+    0 & 1 \\
     1 & 1
 \end{bmatrix}
 $
 
 then the resulting vector will be
-$ f\prime = \begin{bmatrix}
-    F_{n} F_{n+1}
+$ f' = \begin{bmatrix}
+    F_{n} \\
+    F_{n+1}
    \end{bmatrix}
 $.
 
@@ -84,11 +85,11 @@ $ A^2 \cdot f = f\prime\prime $
 
 More generally, we can say that $ A^n * f $ will advance the sequence by n.
 
-And from here, all we need is a method that computes A^n in logarithmic time to
-get a logarithmic-time Fibonacci number generator.  The bit of intuition that
-allows us to do this is that in order to compute e.g. $ 2^16 $, we don't need
-to multiply 2 by itself 16 times.  We can rely on the fact that $ 2^16 = 2^8 *
-2^8 $.
+And from here, all we need is a method that computes $ A^n $ in logarithmic
+time to get a logarithmic-time Fibonacci number generator.  The bit of
+intuition that allows us to do this is that in order to compute e.g. $ 2^{16}
+$, we don't need to multiply 2 by itself 16 times.  We can rely on the fact
+that $ 2^{16} = 2^8 * 2^8 $.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
 
 See `fib_log.py` if you're curious.
