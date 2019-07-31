@@ -74,22 +74,23 @@ $.
 ($F_{n-1}$ is the n-1th Fibonacci number, $F_n$ is the nth and $F_{n+1}$ is the
 n+1th)
 
-So we have $A \cdot f = f\prime$.
+So we have $ A \cdot f = f' $.
 
 And it follows that if we want to advance in the sequence by two, we can just
 multiply by A twice:
 
-$ A \cdot A \cdot f = A \cdot f\prime = f\prime\prime $
+$$ A \cdot A \cdot f = A \cdot f' = f'' $$
 
-$ A^2 \cdot f = f\prime\prime $
+$$ A^2 \cdot f = f'' $$
 
-More generally, we can say that $ A^n * f $ will advance the sequence by n.
+
+More generally, we can say that $ A^n \cdot f $ will advance the sequence by n.
 
 And from here, all we need is a method that computes $ A^n $ in logarithmic
 time to get a logarithmic-time Fibonacci number generator.  The bit of
 intuition that allows us to do this is that in order to compute e.g. $ 2^{16}
 $, we don't need to multiply 2 by itself 16 times.  We can rely on the fact
-that $ 2^{16} = 2^8 * 2^8 $.
+that $ 2^{16} = 2^8 \cdot 2^8 $.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
 
 See `fib_log.py` if you're curious.

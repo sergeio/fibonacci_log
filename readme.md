@@ -61,21 +61,22 @@ then the resulting vector will be
 (<img src="svgs/ee1c9fcc1452eff199fcb4bda04bc783.svg" align=middle width=35.52351pt height=22.46574pt/> is the n-1th Fibonacci number, <img src="svgs/c9c53a99901c4a67544997f70b0f01bc.svg" align=middle width=18.69681pt height=22.46574pt/> is the nth and <img src="svgs/b5fc1b39bc634786995c3b0ab5dd3809.svg" align=middle width=35.340855pt height=22.46574pt/> is the
 n+1th)
 
-So we have <img src="svgs/9f8c83087c7a5cadfe110ac5e0cf89a0.svg" align=middle width=70.27383pt height=22.83138pt/>.
+So we have <img src="svgs/f1e1a5b3bad54eb90cc6094d34559a97.svg" align=middle width=69.54321pt height=24.71634pt/>.
 
 And it follows that if we want to advance in the sequence by two, we can just
 multiply by A twice:
 
-<img src="svgs/0968535951df4888c71c6e84446d87c9.svg" align=middle width=159.452205pt height=22.83138pt/>
+<p align="center"><img src="svgs/45139aa4427dc9ad494979426d787785.svg" align=middle width=158.081715pt height=16.3763325pt/></p>
 
-<img src="svgs/3281ad70f2f279c6ae448c8c4ede7392.svg" align=middle width=82.168845pt height=26.76201pt/>
+<p align="center"><img src="svgs/7c25f8d85c1fbfc980ad332a998455c7.svg" align=middle width=80.707605pt height=17.399085pt/></p>
 
-More generally, we can say that <img src="svgs/680c4edf5d0b5620b591ca8c1751e9c4.svg" align=middle width=46.619265pt height=22.83138pt/> will advance the sequence by n.
+
+More generally, we can say that <img src="svgs/e0b84a42ef5d3070707127df0dda099e.svg" align=middle width=42.966165pt height=22.83138pt/> will advance the sequence by n.
 
 And from here, all we need is a method that computes <img src="svgs/925708a34751d898c4a6364dc7baaaa3.svg" align=middle width=20.454885pt height=22.46574pt/> in logarithmic
 time to get a logarithmic-time Fibonacci number generator.  The bit of
 intuition that allows us to do this is that in order to compute e.g. <img src="svgs/5f1b67e2d760d039284fdbadb2b9b9b0.svg" align=middle width=21.324435pt height=26.76201pt/>, we don't need to multiply 2 by itself 16 times.  We can rely on the fact
-that <img src="svgs/cd4acc6a3bf55e25cd9ec16a02d79f37.svg" align=middle width=89.95437pt height=26.76201pt/>.
+that <img src="svgs/6ebf32d917608acc735c2256ecd8d31c.svg" align=middle width=86.30127pt height=26.76201pt/>.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
 
 See `fib_log.py` if you're curious.
