@@ -124,7 +124,7 @@ Let's zoom out a bit more:
 The reason I started this readme with a disclaimer is because while the number
 of operations is indeed linear or logarithmic, the time those operations take
 is not.  You can clearly see that while the orange algorithm is labeled as
-"fib_lin", the runtime clearly curves upward.  And that's because the 10,000th
-Fibonacci number is well over 2,000 digits long.  Adding and multiplying such
-big numbers takes more CPU cycles; timing depends on the magnitudes of the
-numbers.
+`fib_linear`, the runtime clearly curves upward.  And that's because the
+10,000th Fibonacci number is well over 2,000 digits long.  Adding and
+multiplying such big numbers takes more CPU cycles; timing depends on the
+magnitudes of the numbers.
