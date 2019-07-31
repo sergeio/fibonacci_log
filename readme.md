@@ -43,8 +43,7 @@ def fib(n):
 ```
 
 If you've spent some time with programming interview questions, you might also
-know that there's a [constant-time solution](https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression),
-if you have a bunch of extra square-roots-of-five lying around.
+know that there's a [constant-time solution](https://en.wikipedia.org/wiki/Fibonacci_number#Closed-form_expression).
 
 
 ### Logarithmic-time
@@ -54,7 +53,7 @@ solution.
 
 Let's represent the Fibonacci sequence as
 
-<p align="center"><img src="svgs/9a88cfb82a59a64ae0d8b89d27fc41ce.svg" align=middle width=251.4435pt height=16.438356pt/></p>
+<p align="center"><img src="svgs/e1db22002905361dda0d03bf9b4db3f2.svg" align=middle width=264.05775pt height=16.438356pt/></p>
 
 The first bit of knowledge we need is that it is possible to represent the
 operation of transforming a Fibonacci number into the next Fibonacci number
@@ -96,19 +95,18 @@ See `fib_log.py` if you're curious.
 ### Let's time some things
 
 If we run the code in `timing.py`, we can see that indeed the logarithmic
-solution outperforms the linear on on a large-enough scale by quite a bit:
-
-![exponential runtime graph](plot_linear_log_10k.png)
-
-
-If we restrict the sequence to just the first 2000 numbers, the runtime looks
-even more logarithmic:
+solution outperforms the linear on on a large-enough scale:
 
 ![exponential runtime graph](plot_linear_log_2k.png)
 
 Some of the jitter is just noise, and some of it is due to the fact that
 doing exponentiation where the exponent is a power of two takes fewer
 operations with our exponentiation-by-squaring method.
+
+
+Let's zoom out a bit more:
+
+![exponential runtime graph](plot_linear_log_10k.png)
 
 The reason I started this readme with a disclaimer is because while the number
 of operations is indeed linear or logarithmic, the time those operations take
