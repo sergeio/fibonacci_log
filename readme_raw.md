@@ -86,11 +86,15 @@ $$ A^2 \cdot f = f'' $$
 
 More generally, we can say that $ A^n \cdot f $ will advance the sequence by n.
 
-And from here, all we need is a method that computes $ A^n $ in logarithmic
-time to get a logarithmic-time Fibonacci number generator.  The bit of
-intuition that allows us to do this is that in order to compute e.g. $ 2^{16}
-$, we don't need to multiply 2 by itself 16 times.  We can rely on the fact
-that $ 2^{16} = 2^8 \cdot 2^8 $.
+Because exponentiation can be done in logarithmic time, we can now generate
+Fibonacci numbers with matching time complexity.
+
+The bit of intuition that allows us to do this is that in order to compute e.g.
+$ 2^{17} $, we don't need to multiply 2 by itself 17 times.  We can rely on the
+fact that $ 2^{17} = 2 \cdot 2^8 \cdot 2^8 $.  Similarly, $ 2^8 $ can be
+expressed as $ 2^4 \cdot 2^4$.  And taking this logic to its conclusion,
+$ 2^{17} = 2 \cdot ((2^2 \cdot 2^2)^2)^2 $.  Instead of 16 multiplications, we
+only need to do 5.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
 
 See `fib_log.py` if you're curious.
