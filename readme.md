@@ -52,31 +52,31 @@ operation of transforming a Fibonacci number into the next Fibonacci number
 as a single matrix multiplication.
 
 Specifically, if we take the column vector
-<img src="svgs/9256c7eb9d16f28115e35ea84af763c4.svg?invert_in_darkmode" align=middle width=101.29779pt height=27.94572pt/>, and left-multiply it by
+<img src="svgs/9256c7eb9d16f28115e35ea84af763c4.svg" align=middle width=101.29779pt height=27.94572pt/>, and left-multiply it by
 
-<img src="svgs/c8d4234922966430303df9a5acf4493f.svg?invert_in_darkmode" align=middle width=113.698695pt height=27.94572pt/>
+<img src="svgs/c8d4234922966430303df9a5acf4493f.svg" align=middle width=113.698695pt height=27.94572pt/>
 
 then the resulting vector will be
-<img src="svgs/7baac4660cb00c508f1373fa4a21548a.svg?invert_in_darkmode" align=middle width=105.63564pt height=27.94572pt/>.
+<img src="svgs/7baac4660cb00c508f1373fa4a21548a.svg" align=middle width=105.63564pt height=27.94572pt/>.
 
-(<img src="svgs/ee1c9fcc1452eff199fcb4bda04bc783.svg?invert_in_darkmode" align=middle width=35.52351pt height=22.46574pt/> is the n-1th Fibonacci number, <img src="svgs/c9c53a99901c4a67544997f70b0f01bc.svg?invert_in_darkmode" align=middle width=18.69681pt height=22.46574pt/> is the nth and <img src="svgs/b5fc1b39bc634786995c3b0ab5dd3809.svg?invert_in_darkmode" align=middle width=35.340855pt height=22.46574pt/> is the
+(<img src="svgs/ee1c9fcc1452eff199fcb4bda04bc783.svg" align=middle width=35.52351pt height=22.46574pt/> is the n-1th Fibonacci number, <img src="svgs/c9c53a99901c4a67544997f70b0f01bc.svg" align=middle width=18.69681pt height=22.46574pt/> is the nth and <img src="svgs/b5fc1b39bc634786995c3b0ab5dd3809.svg" align=middle width=35.340855pt height=22.46574pt/> is the
 n+1th)
 
-So we have <img src="svgs/9f8c83087c7a5cadfe110ac5e0cf89a0.svg?invert_in_darkmode" align=middle width=70.27383pt height=22.83138pt/>.
+So we have <img src="svgs/9f8c83087c7a5cadfe110ac5e0cf89a0.svg" align=middle width=70.27383pt height=22.83138pt/>.
 
 And it follows that if we want to advance in the sequence by two, we can just
 multiply by A twice:
 
-<img src="svgs/0968535951df4888c71c6e84446d87c9.svg?invert_in_darkmode" align=middle width=159.452205pt height=22.83138pt/>
+<img src="svgs/0968535951df4888c71c6e84446d87c9.svg" align=middle width=159.452205pt height=22.83138pt/>
 
-<img src="svgs/3281ad70f2f279c6ae448c8c4ede7392.svg?invert_in_darkmode" align=middle width=82.168845pt height=26.76201pt/>
+<img src="svgs/3281ad70f2f279c6ae448c8c4ede7392.svg" align=middle width=82.168845pt height=26.76201pt/>
 
-More generally, we can say that <img src="svgs/680c4edf5d0b5620b591ca8c1751e9c4.svg?invert_in_darkmode" align=middle width=46.619265pt height=22.83138pt/> will advance the sequence by n.
+More generally, we can say that <img src="svgs/680c4edf5d0b5620b591ca8c1751e9c4.svg" align=middle width=46.619265pt height=22.83138pt/> will advance the sequence by n.
 
 And from here, all we need is a method that computes A^n in logarithmic time to
 get a logarithmic-time Fibonacci number generator.  The bit of intuition that
-allows us to do this is that in order to compute e.g. <img src="svgs/3ab642dabafb8786b9db56733d4e4902.svg?invert_in_darkmode" align=middle width=23.812965pt height=26.76201pt/>, we don't need
-to multiply 2 by itself 16 times.  We can rely on the fact that <img src="svgs/094c372df4d46a50284164aea5f5735d.svg?invert_in_darkmode" align=middle width=91.621035pt height=26.76201pt/>.
+allows us to do this is that in order to compute e.g. <img src="svgs/3ab642dabafb8786b9db56733d4e4902.svg" align=middle width=23.812965pt height=26.76201pt/>, we don't need
+to multiply 2 by itself 16 times.  We can rely on the fact that <img src="svgs/094c372df4d46a50284164aea5f5735d.svg" align=middle width=91.621035pt height=26.76201pt/>.
 [Wikipedia](https://en.wikipedia.org/wiki/Exponentiation_by_squaring) has more.
 
 See `fib_log.py` if you're curious.
