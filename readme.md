@@ -53,7 +53,7 @@ solution.
 
 Let's represent the Fibonacci sequence as
 
-<p align="center"><img src="svgs/e1db22002905361dda0d03bf9b4db3f2.svg" align=middle width=264.05775pt height=16.438356pt/></p>
+<p align="center"><img src="svgs/0e60556f7e0512e10e2a4e6f40374a1d.svg" align=middle width=247.62045pt height=16.438356pt/></p>
 
 The first bit of knowledge we need is that it is possible to represent the
 operation of transforming a Fibonacci number into the next Fibonacci number

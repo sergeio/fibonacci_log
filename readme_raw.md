@@ -53,7 +53,7 @@ solution.
 
 Let's represent the Fibonacci sequence as
 
-$$ F = \{ F_1, F_2, \ldots, F_{n-1}, F_n, F_{n+1}, \ldots \} $$
+$$ F = \{ F_1, F_2 \ldots F_{n-1}, F_n, F_{n+1} \ldots \} $$
 
 The first bit of knowledge we need is that it is possible to represent the
 operation of transforming a Fibonacci number into the next Fibonacci number
