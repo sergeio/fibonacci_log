@@ -19,5 +19,6 @@ plt.plot(times, alpha=.8)
 plt.axes().get_yaxis().set_visible(False)
 plt.xlabel('n')
 plt.legend(['fib_log', 'fib_linear'])
+plt.title('Time to generate nth Fibonacci number')
 plt.savefig('plot.png')
 print 'done'
