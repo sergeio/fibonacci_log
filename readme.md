@@ -70,7 +70,7 @@ If it's been some time since you've done matrix multiplication, here's a
 refresher, courtesy of
 [matrixmultiplication.xyz](http://matrixmultiplication.xyz):
 
-<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" align=middle width="50%" height="50%" />
+<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" align=middle width="256px" />
 
 
 So we have <img src="svgs/f1e1a5b3bad54eb90cc6094d34559a97.svg" align=middle width=69.54321pt height=24.71634pt/>.
