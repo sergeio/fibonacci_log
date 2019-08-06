@@ -79,6 +79,13 @@ $ f' = \begin{bmatrix}
    \end{bmatrix}
 $.
 
+If it's been some time since you've done matrix multiplication, here's a
+refresher, courtesy of
+[matrixmultiplication.xyz](http://matrixmultiplication.xyz):
+
+![matrix multiplication animation](matrix_multiplication_example.gif)
+
+
 So we have $ A \cdot f = f' $.
 
 And it follows that if we want to advance in the sequence by two, we can just
