@@ -83,7 +83,7 @@ If it's been some time since you've done matrix multiplication, here's a
 refresher, courtesy of
 [matrixmultiplication.xyz](http://matrixmultiplication.xyz):
 
-![matrix multiplication animation](matrix_multiplication_example.gif)
+<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" align=middle width="50%" height="50%" />
 
 
 So we have $ A \cdot f = f' $.

@@ -66,14 +66,14 @@ Specifically, if we take the column vector
 then the resulting vector will be
 <img src="svgs/f83e21e74ccfd55219d4de7c7b17cb58.svg" align=middle width=89.86131pt height=47.67147pt/>.
 
-So we have <img src="svgs/f1e1a5b3bad54eb90cc6094d34559a97.svg" align=middle width=69.54321pt height=24.71634pt/>.
-
-If it's been a while since you've done matrix multiplication, here's a
+If it's been some time since you've done matrix multiplication, here's a
 refresher, courtesy of
 [matrixmultiplication.xyz](http://matrixmultiplication.xyz):
 
-![matrix multiplication animation](matrix_multiplication_example.gif)
+<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" align=middle width="50%" height="50%" />
 
+
+So we have <img src="svgs/f1e1a5b3bad54eb90cc6094d34559a97.svg" align=middle width=69.54321pt height=24.71634pt/>.
 
 And it follows that if we want to advance in the sequence by two, we can just
 multiply by A twice:
