@@ -66,18 +66,17 @@ Specifically, if we take the column vector
 then the resulting vector will be
 <img src="svgs/f83e21e74ccfd55219d4de7c7b17cb58.svg" align=middle width=89.86131pt height=47.67147pt/>.
 
+<blockquote>
 <details>
     <summary>
-        If it's been a while since you've done matrix multiplication, here's a
-        refresher (click to expand)
+        Click to expand matrix multiplication example
     </summary>
 
-<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" align=middle width="256px" />
+<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" />
 
 Source: [matrixmultiplication.xyz](http://matrixmultiplication.xyz)
-
 </details>
-
+</blockquote>
 
 So we have <img src="svgs/f1e1a5b3bad54eb90cc6094d34559a97.svg" align=middle width=69.54321pt height=24.71634pt/>.
 

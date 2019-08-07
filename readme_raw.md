@@ -79,17 +79,17 @@ $ f' = \begin{bmatrix}
    \end{bmatrix}
 $.
 
+<blockquote>
 <details>
     <summary>
-        If it's been a while since you've done matrix multiplication, here's a
-        refresher (click to expand)
+        Click to expand matrix multiplication example
     </summary>
 
-<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" align=middle width="256px" />
+<img alt="matrix multiplication animation" src="matrix_multiplication_example.gif" />
 
 Source: [matrixmultiplication.xyz](http://matrixmultiplication.xyz)
-
 </details>
+</blockquote>
 
 So we have $ A \cdot f = f' $.
 
